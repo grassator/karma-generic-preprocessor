@@ -1,0 +1,35 @@
+{
+  "name": "karma-generic-preprocessor",
+  "version": "1.0.0",
+  "description": "Provides a way to define preprocessors inline in the karma configuration files.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grassator/karma-generic-preprocessor.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-preprocessor"
+  ],
+  "author": {
+    "name": "Dmitriy Kubyshkin",
+    "email": "dmitriy@kubyshkin.ru"
+  },
+  "dependencies": {
+
+  },
+  "peerDependencies": {
+    "karma": ">=0.9"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/grassator/karma-generic-preprocessor/issues"
+  },
+  "maintainers": [
+    {
+      "name": "Dmitriy Kubyshkin",
+      "email": "dmitriy@kubyshkin.ru"
+    }
+  ]
+}
