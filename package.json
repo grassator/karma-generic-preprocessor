@@ -16,7 +16,8 @@
     "email": "dmitriy@kubyshkin.ru"
   },
   "dependencies": {
-
+    "async-reduce": "0.0.1",
+    "minimatch": "^1.0.0"
   },
   "peerDependencies": {
     "karma": ">=0.9"

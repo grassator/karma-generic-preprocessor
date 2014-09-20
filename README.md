@@ -32,9 +32,11 @@ module.exports = function(config) {
     },
     genericPreprocessor: {
       rules: [{
+        // this will always be matched on original path, even
+        // if you change file.path in of the `process` functions
         match: "*.coffee",
         // almost  same as karam-coffee-preprocessor
-        process: function (content, file, basePath, done, log) {
+        process: function (content, file, done, log) {
           file.path = file.originalPath.replace(/\.coffee$/g, '.js');
           try {
             done(coffee.compile(content));
@@ -45,7 +47,7 @@ module.exports = function(config) {
       }, {
         // if no match is specified all the files matched by
         // `preprocessors` config above will be processed
-        process: function (content, file, basePath, done, log) {
+        process: function (content, file, done, log) {
           log.debug('Processing "%s".', file.originalPath);
           done(content);
         }
