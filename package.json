@@ -1,6 +1,6 @@
 {
   "name": "karma-generic-preprocessor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Provides a way to define preprocessors inline in the karma configuration files.",
   "main": "index.js",
   "repository": {

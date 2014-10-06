@@ -13,7 +13,12 @@ function factory(args, config, logger, basePath) {
       var pattern = rule.match || "**/*";
       var next = callback.bind(null, null);
       if (minimatch(relativePath, pattern)) {
-        rule.process(prevContent, file, next, log);
+        try {
+          rule.process(prevContent, file, next, log);
+        } catch (e) {
+          log.error('%s\n  for file %s', e.message, file.originalPath);
+          done(e, null);
+        }
       } else {
         next(prevContent);
       }
