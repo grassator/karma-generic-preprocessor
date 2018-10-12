@@ -1,6 +1,6 @@
 {
   "name": "karma-generic-preprocessor",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Provides a way to define preprocessors inline in the karma configuration files.",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "async-reduce": "0.0.1",
-    "minimatch": "^1.0.0"
+    "async.reduce": "^0.5.2",
+    "minimatch": "^3.0.4"
   },
   "peerDependencies": {
     "karma": ">=0.9"
